@@ -4,8 +4,11 @@ import RegisterForm from '../components/RegisterForm';
 const RegistrationPage = () => {
   return (
     <div>
-      <h1>Registration Page</h1>
-      <RegisterForm />
+      {/* 其他頁面內容 */}
+      <div>
+        {/* 放置註冊表單 */}
+        <RegisterForm />
+      </div>
     </div>
   );
 };
