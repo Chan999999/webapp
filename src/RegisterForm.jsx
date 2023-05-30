@@ -10,7 +10,6 @@ const RegisterForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // 執行註冊邏輯
     try {
       const response = await axios.post('/api/users/register', {
         username,
@@ -22,7 +21,6 @@ const RegisterForm = () => {
       console.error(error);
     }
 
-    // 清空輸入欄位
     setUsername('');
     setEmail('');
     setPassword('');
