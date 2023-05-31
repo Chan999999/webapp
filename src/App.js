@@ -10,22 +10,11 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/WEBAPP/React/build" element={<Layout />}>
-          <Route path="homepage" element={<HomePage />} />
-          <Route path="second" element={<Second />} />
-          <Route path="" element={<Navigate to="/WEBAPP/React/build/homepage" />} />
-        </Route>
+        <Route path="/WEBAPP/React/build" element={<Layout />} />
         <Route path="/" element={<Navigate to="/WEBAPP/React/build/homepage" />} />
       </Routes>
     </Router>
   );
 }
 
-function Second() {
-  return (
-    <Link to="/WEBAPP/React/build">回主頁</Link>
-  );
-}
-
 export default App;
-
