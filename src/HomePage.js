@@ -9,6 +9,10 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Pagination from 'react-bootstrap/Pagination';
 
+import LoginForm from './LoginForm';
+import PostList from './PostList';
+
+
 import { LinkContainer } from 'react-router-bootstrap';
 
 import "./HomePage.css";
@@ -187,3 +191,17 @@ function ShowExperience(){
         </Container>
     );
 }
+
+function HomePage() {
+  return (
+    <div>
+      <Description />
+      <QuickGuide />
+      <Experience />
+
+      <LoginForm />
+      <PostList />
+    </div>
+  );
+}
+
