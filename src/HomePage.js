@@ -195,17 +195,6 @@ function ShowExperience() {
   );
 }
 
-function LoginForm() {
-  return <div>LoginForm component</div>;
-}
-
-function PostList() {
-  return <div>PostList component</div>;
-}
-
-function RegisterForm() {
-  return <div>RegisterForm component</div>;
-}
 
 export default HomePage;
 
