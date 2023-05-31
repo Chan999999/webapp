@@ -168,10 +168,12 @@ function Experience() {
         </div>
       </LinkContainer>
       <Placeholder />
-      <ShowExperience />
+      <CreatePostForm /> {/* 添加CreatePostForm組件 */}
+      <PostList />
     </>
   );
 }
+
 
 
 // ...
