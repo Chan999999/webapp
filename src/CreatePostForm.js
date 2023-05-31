@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
 
-const CreatePostForm = () => {
+const CreatePostPage = ({ history }) => {
   const [title, setTitle] = useState('');
   const [content, setContent] = useState('');
 
@@ -23,6 +23,8 @@ const CreatePostForm = () => {
       setContent('');
       // 刷新貼文列表
       // 可以在此處調用獲取貼文的函數
+      // 重定向到首頁
+      history.push('/');
     } catch (error) {
       console.error(error);
     }
@@ -46,4 +48,5 @@ const CreatePostForm = () => {
   );
 };
 
-export default CreatePostForm;
+export default CreatePostPage;
+
