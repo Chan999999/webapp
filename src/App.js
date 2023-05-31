@@ -10,10 +10,10 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/WEBAPP/React/build" element={<Layout />}>
-          <Route path="homepage" element={<HomePage />} />
-          <Route path="second" element={<Second />} />
-          <Route path="" element={<Navigate to="homepage" />} />
+        <Route path="/WEBAPP/React/build/*" element={<Layout />}>
+          <Route path="/homepage" element={<HomePage />} />
+          <Route path="/second" element={<Second />} />
+          <Route index element={<Navigate to="/homepage" />} />
         </Route>
         <Route path="/" element={<Navigate to="/WEBAPP/React/build/homepage" />} />
       </Routes>
