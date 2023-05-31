@@ -1,5 +1,4 @@
 import React from 'react';
-
 import Container from 'react-bootstrap/Container';
 import Stack from 'react-bootstrap/Stack';
 import Card from 'react-bootstrap/Card';
@@ -10,7 +9,6 @@ import Col from 'react-bootstrap/Col';
 import Pagination from 'react-bootstrap/Pagination';
 import CreatePostForm from './CreatePostForm';
 import { Link } from 'react-router-dom';
-
 
 import LoginForm from './LoginForm';
 import PostList from './PostList';
@@ -34,7 +32,6 @@ function HomePage() {
       <Description />
       <QuickGuide />
       <Experience />
-
       <LoginForm />
       <PostList />
     </div>
@@ -163,43 +160,21 @@ function Experience() {
   return (
     <>
       <Placeholder />
-      <LinkContainer to={basename + 'second'}>
+      <Link to='/create-post'>
         <div className="d-grid gap-2 w-50 my-3 mx-auto">
           <Button variant="dark" size="lg">
             我來分享
           </Button>
         </div>
-      </LinkContainer>
+      </Link>
       <Placeholder />
-      <CreatePostForm /> {/* 添加CreatePostForm組件 */}
       <PostList />
     </>
   );
 }
 
-
-
 // ...
 
-function ShowExperience() {
-  return (
-    <Container className='justify-content-center d-flex'>
-      <Pagination>
-        <Pagination.First />
-        <Pagination.Prev />
-        <Pagination.Item>{1}</Pagination.Item>
-        <Pagination.Ellipsis />
-
-        <Pagination.Item>{10}</Pagination.Item>
-        <Pagination.Item>{11}</Pagination.Item>
-        <Pagination.Item active>{12}</Pagination.Item>
-        <Pagination.Item>{13}</Pagination.Item>
-        <Pagination.Item disabled></Pagination.Item> 
-      </Pagination>
-    </Container>
-  );
-}
-
-
 export default HomePage;
+
 
