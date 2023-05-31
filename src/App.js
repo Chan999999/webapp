@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, Navigate, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import './App.css';
 import './index.css';
 import HomePage from './HomePage';
@@ -19,11 +19,11 @@ function App() {
   );
 }
 
-export default App;
-
 function Second() {
   return (
     <Link to="/">回主頁</Link>
   );
 }
+
+export default App;
 
