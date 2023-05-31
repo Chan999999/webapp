@@ -187,7 +187,11 @@ function ShowExperience() {
         <Pagination.Item>{11}</Pagination.Item>
         <Pagination.Item active>{12}</Pagination.Item>
         <Pagination.Item>{13}</Pagination.Item>
-        <Pagination.Item disabled
+        <Pagination.Item disabled</Pagination.Item>
+      </Pagination>
+    </Container>
+  );
+}
 
 function LoginForm() {
   return <div>LoginForm component</div>;
@@ -200,4 +204,5 @@ function PostList() {
 function RegisterForm() {
   return <div>RegisterForm component</div>;
 }
+
 
