@@ -23,8 +23,9 @@ function App() {
 
 function Second() {
   return (
-    <Link to="/">回主頁</Link>
+    <Link to="/WEBAPP/React/build">回主頁</Link>
   );
 }
 
 export default App;
+
