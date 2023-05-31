@@ -8,6 +8,8 @@ import Carousel from 'react-bootstrap/Carousel';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Pagination from 'react-bootstrap/Pagination';
+import CreatePostForm from './CreatePostForm';
+
 
 import LoginForm from './LoginForm';
 import PostList from './PostList';
