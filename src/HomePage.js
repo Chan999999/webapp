@@ -174,6 +174,8 @@ function Experience() {
 }
 
 
+// ...
+
 function ShowExperience() {
   return (
     <Container className='justify-content-center d-flex'>
@@ -187,7 +189,7 @@ function ShowExperience() {
         <Pagination.Item>{11}</Pagination.Item>
         <Pagination.Item active>{12}</Pagination.Item>
         <Pagination.Item>{13}</Pagination.Item>
-        <Pagination.Item disabled</Pagination.Item>
+        <Pagination.Item disabled></Pagination.Item> {/* 修正此行 */}
       </Pagination>
     </Container>
   );
@@ -205,4 +207,5 @@ function RegisterForm() {
   return <div>RegisterForm component</div>;
 }
 
+export default HomePage;
 
